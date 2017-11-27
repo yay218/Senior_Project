@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.yiyang.driver_coach.Activity_savedroutes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_saved_routes"
+        android:text="Saved Routes: "
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Drive Home"
+        android:id="@+id/btn_drive_home"
+        android:layout_below="@+id/text_saved_routes"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Drive to Lehigh"
+        android:id="@+id/btn_drive_to_lehigh"
+        android:layout_below="@+id/btn_drive_home"
+        />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

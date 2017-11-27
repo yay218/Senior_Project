@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Driver_Coach</string>
+    <string name="title_activity_show_map">show_map</string>
+    <string name="title_activity_map">Map</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yiyang.driver_coach.Activity_feedback">
+
+    <LinearLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driving Duration"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average (heavy traffic): 37.5 min, Average (light traffic): 22.3 min"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Driving Duration"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soft Brake"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average (heavy traffic): 57 times, Average (light traffic): 33 times"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard Brake"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average (heavy traffic): 3.5 times, Average (heavy traffic): 0.3 times"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <!--
+
+         <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+         -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Feedback on this route: "
+            android:textSize="13dp"
+            android:layout_weight="1.25"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="You frequently perform hard brake during heavy traffic. It is very dangerous! Slow down you speed and be careful under heavy traffic!"
+            android:textSize="10dp"
+            android:layout_weight="1.2"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
